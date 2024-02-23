@@ -26,8 +26,8 @@
 }
 
 .logo img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 .bg {
@@ -59,26 +59,6 @@
     height: 15vh;
 }
 
-.navBar ul {
-    display: flex;
-    align-items: center;
-  }
-.navBar ul li {
-    padding: 0 25px;
-}
-
-.navBar ul li a {
-    font-size: 1rem;
-    color: #fff;
-    font-weight: 400;
-    letter-spacing: 1.5px;
-}
-
-.navBar .logo a {
-    font-size: 2.3rem;
-    color: #fff;
-}
-
 .content {
     display: flex;
     justify-content: space-between;
@@ -86,7 +66,7 @@
     width: 85%;
     position: absolute;
     top: 60%;
-    left: 50%;
+    left: 45%;
     transform: translate(-50%, -50%);
     align-items: center;
 }
@@ -192,11 +172,11 @@
     justify-content: space-between;
     align-items: start;
     margin-top: -110px;
-    height: 55rem;
+    height: 50rem;
 }
   
 .image-container {
-    width: 50%; /* Adjust as needed */
+    width: 50%; 
 }
   
 .image-container img {
@@ -206,14 +186,14 @@
 }
   
 .text-container {
-    width: 50%; /* Adjust as needed */
+    width: 50%; 
     padding: 50px;
     text-align: start;
 }
   
 .text-container h1 {
-    color: #000; /* Replace with the actual color from the image */
-    font-size: 30px; /* Adjust as needed */
+    color: #000; 
+    font-size: 30px; 
     margin-bottom: 50px;
     margin-top: 50px;
     border-bottom: 1px solid purple;
@@ -226,7 +206,7 @@
 }
   
 .text-container h4 {
-    font-size: 20px; /* Adjust as needed */
+    font-size: 20px; 
     width: 48rem;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -240,65 +220,233 @@
     margin-left: 40px;
 }
 
+.text-topup-slide {
+    text-align: center;
+    align-items: center;
+    margin-top: -7rem;
+    margin-bottom: 2rem;
+}
+
+.text-topup-slide h1 {
+    font-size: 40px;
+    width: 95rem;
+    margin: auto;
+    padding: 2.5rem;
+    color: #000000;
+    text-shadow: 0 0 5px #8c00ff, 0 0 50px #b700ff;
+    border-top: 2px solid #7225b9;
+    border-bottom: 2px solid #7225b9;
+}
+
+/*.slide-bg {
+    width: 100%;
+    height: 70rem;
+    margin-top: 3.5rem;
+    background-size: cover;
+    background-image: url(./photo/bg2.png) ;
+} */
+
+.slideshow-container {
+    max-width: 1300px;
+    height: 600px;
+    position: relative;
+    top: 3rem;
+    margin: auto;
+}
+  
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    height: 700px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px #636262;
+}
+  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    margin-top: 10rem;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.container-bt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    height: 6rem;
+}
+  
+a.button {
+    width: 250px;
+    height: 90px;
+    position: relative; 
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #717171;
+    cursor: pointer;
+}
+  
+button {
+    font-size: 50px;
+    background-color: transparent; 
+    border: none;
+}
+  
+.dropdown-menu {
+    display: none; 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    width: 250px; 
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #717171;
+}
+  
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.dropdown-menu li {
+    padding: 10px 20px;
+}
+  
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #000;
+}
+  
+.dropdown-menu li a:hover {
+    background-color: #f2f2f2;
+}
+  
+a.button:hover .dropdown-menu {
+    display: block; 
+}
+
 .kennonjah {
     display: flex;
-    justify-content: space-between;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 5rem;
-    margin-top: -10rem;
+    background-image: url(./photo/bg2.png);
+    background-size: cover;
+    width: 100%;
+    height: 50rem;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 15rem;
 }
 
 .team-items {
-    padding: 2rem;
+    padding: 3rem;
     text-align: center;
-    margin-top: 100px;
-    background-color: #aaaaaa;
-    border-radius: 15px;
+    align-items: center;
+    margin-top: 11rem;
+    height: 30rem;
+    background-color: #e4e1e1;
+    box-shadow: 0 0 50px #4e1785;
+    border-radius: 20px;
 }
 
 .team-items img {
     width: 190px;
     height: 220px;
-    padding: 2px;
     border-radius: 20px;
     box-shadow: 0 0 15px #333;
 }
 
 .team-items h2 {
     margin-bottom: 15px;
-    color: #fff;
-    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    color: #000000;
+    text-shadow: 2px 2px 5px rgb(73, 72, 75);
 }
 
 .team-items h4 {
     margin-top: 20px;
-    color: #fff;
-    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    color: #000000;
+    text-shadow: 2px 2px 5px rgb(73, 72, 75);
 }
 
 .team-items p {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     padding: 10px;
-    color: #fff;
-    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    color: #000000;
+    text-shadow: 2px 2px 5px rgb(73, 72, 75);
 }
 
 .team-items a {
     text-decoration: none;
     color: #fff;
     background: #000;
-    padding: 0.5rem;
+    padding: 0.8rem;
     border-radius: 10px;
     box-shadow: 0 0 5px #333;
-    text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 
 
 footer {
-    background: #333;
-    padding: 1rem;
-    text-align: center;
-    justify-content: center;
-    color: #fff;
+    clear : both;
+    padding : 5px;
+    text-align : center;
+    border-top : 10px solid #570aa0;
+    color : #000000;
+    background : #a480bb;
 }
+
 

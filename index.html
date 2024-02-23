@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Final Project</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -11,14 +11,9 @@
   <div class="container bg">
     <div class="navBar">
       <div class="logo">
-        <img src="./photo/TCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC.png" alt="">
-      </div>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
+        <img src="https://www.rmutp.ac.th/web2561/wp-content/uploads/2018/07/logo.png"target="_blank" alt="">
+        <img src="./photo/TCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC.png"target="_blank" alt="">
+      </div>    
     </div>
   </div>
 
@@ -28,11 +23,11 @@
           <h2>RMUTP</h2>
         </div>
           <div class="txt">
-            <h1>Technical</h1>
-            <h1>Computer</h1>
+            <h1>AOETech</h1>
+            <h1>CHSYNERGY</h1>
             <p>ยินดีต้อนรับเข้าสู่ Website Project ปวช. ปีที่ 3</p>
             <p>มีเนื้อหาเกี่ยวกับความเป็นมาของมหาวิทยาลัยราชมงคลพระนครเหนือ</p>
-            <p>และ สาขาเทคนิคคอมพิวเตอร์</p>
+            <p>และ สาขาช่างเทคนิคคอมพิวเตอร์</p>
           </div>
       </div>
   </div>         
@@ -116,24 +111,159 @@
     </div>
     </div>
   </div>
+
+<div class="text-topup-slide">
+  <h1>ความเป็นมาของราชมงคลพระนครเหนือ</h1>
+</div>
+
+
+  <!-- Slideshow container -->
+<div class="slide-bg">
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="./photo/rmutp1.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="./photo/rmutp2.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="./photo/rmutp3.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="./photo/rmutp4.png" style="width:100%">
+  </div>
+
+  <!-- ปุ่มถัดไป และ ปุ่มก่อนหน้า -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- วงกลมจุดๆ -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+</div>
+
+
+<!-- <div class="container-bt">
+  <a class="button" href="#">
+    <button>Click Me!</button>
+  </a>
+  <div class="dropdown-menu">
+    <ul>
+      <li><a href="#">Menu Item 1</a></li>
+      <li><a href="#">Menu Item 2</a></li>
+      <li><a href="#">Menu Item 3</a></li>
+    </ul>
+  </div>
+</div> -->
+
+<style>
+  .dropdown{
+    margin-left: 45.9%;
+    margin-top: 5rem;
+  }
+</style>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">
+    <i class="fas fa-angle-down"></i> Click Me!
+  </button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="./letgo.html">ประวัติและความเป็นมา</a>
+  </div>
+</div>
+
+<style>
+  .dropbtn {
+    background-color: rgb(148,0,211); 
+    color: #ffffff;
+    box-shadow: 0 0 10px #7a7878;
+    padding: 20px 30px;
+    font-size: 19px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 5px; 
+    transition: 0.3s ease-in-out; 
+  }
+
+  /* ปุ่มแบบเลื่อนลงเมื่อวางเมาส์เหนือหรือโฟกัส */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #e0e0e0; 
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff; 
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px; 
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+  /* Add icon */
+  .dropbtn i {
+    float: right;
+    margin-left: 5px;
+  }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+
     <section class="kennonjah">
         <div class="team-items">
             <h2>เคน</h2>
-            <img src="https://scontent.fbkk5-7.fna.fbcdn.net/v/t1.15752-9/415366354_911486873494505_6874582326906063997_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=M6JwROqf5LUAX_k77FS&_nc_ht=scontent.fbkk5-7.fna&oh=03_AdSEijpyuHFLUJZB70N_vhGFAnaKmyAxBRKgZ725rJydwA&oe=65CC4AEE" alt="">
+            <img src="./photo/ken.jpg" alt="">
             <h4>นายณัฐภัทร พึ่งคล้าย ปวช.3</h4>
             <p>เลขประจำตัว 056410107004-8</p>
             <a href="https://www.facebook.com/profile.php?id=100017346155427" target="_blank">Contact</a>
         </div>
         <div class="team-items">
             <h2>นนท์</h2>
-            <img src="https://scontent.fbkk5-6.fna.fbcdn.net/v/t1.15752-9/416380744_2716058171896853_8051342377805210777_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=fZB6rQITODMAX-skzMH&_nc_ht=scontent.fbkk5-6.fna&oh=03_AdRg9PJvRSpZqYklpGJLu2hQVZg0Kh1N2PpE1ggIu6twTA&oe=65CC663F" alt="">
+            <img src="./photo/non.jpg" alt="">
             <h4>นายกิตติธัช บูรณเรืองศักดิ์ ปวช.3</h4>
             <p>เลขประจำตัว 056410107008-9</p>
             <a href="https://www.facebook.com/kittituch.buranaruangsak" target="_blank">Contact</a>
         </div>
         <div class="team-items">
             <h2>จ้า</h2>
-            <img src="https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.15752-9/416333920_3738422753148456_8458193142671593294_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=rbAlU5a-hwYAX_onxis&_nc_ht=scontent.fbkk5-4.fna&oh=03_AdQWjZqvIW-kqwp1uJlaq-kFWUC6fpppsqUHJcNC9bOzOA&oe=65CC45DC" alt="">
+            <img src="./photo/jah.jpg" alt="">
             <h4>นายภาณุ เพ็ชรรักษ์ ปวช.3</h4>
             <p>เลขประจำตัว 056410107054-8</p>
             <a href="https://www.facebook.com/Panu.Pecharuk" target="_blank">Contact</a>
@@ -141,11 +271,30 @@
     </section>
 
     <footer>
-      <p>&copy; TC 64/1</p>
+      <p>&copy; 2024 TC 64/1 | Design by <a href="https://www.facebook.com/profile.php?id=100017346155427" target="_blank"> ณัฐภัทร พึ่งคล้าย</a> </a> </div></p>
   </footer>
 
 
   
-        
+<script src="./slide.js"></script>
+
+<script>
+const dropdownBtn = document.querySelector('.dropbtn');
+const dropdownContent = document.getElementById('myDropdown');
+
+function toggleDropdown() {
+  dropdownContent.classList.toggle('show');
+}
+
+dropdownBtn.addEventListener('click', toggleDropdown);
+
+// Optional: Close dropdown on click outside
+window.addEventListener('click', function(event) {
+  if (!dropdownBtn.contains(event.target) && !dropdownContent.contains(event.target)) {
+    dropdownContent.classList.remove('show');
+  }
+});
+
+</script>
 </body>
 </html>
